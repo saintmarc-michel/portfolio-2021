@@ -1,0 +1,24 @@
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+#p1{
+    background-color: orange;
+}
+
+#divgeneral{
+    background-color: blue;
+}
+
+.divpar{
+background-color: yellow;
+}
+
+#paragraphe2{
+    margin: 40px;
+}
+
+#paragraphe3{
+    padding: 40px;
+}

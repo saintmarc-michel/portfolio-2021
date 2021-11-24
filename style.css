@@ -1,0 +1,973 @@
+body{
+    background-image: linear-gradient(180deg, #2af598 5%, #009efd 100%);
+background-repeat: no-repeat;
+font-family: 'Libre Baskerville', serif;
+}
+
+/* logo de site */
+.logo img{
+    width:60px;
+    cursor: pointer;
+}
+
+/* social header*/
+.social{
+    list-style: none;
+    display: flex;
+    font-size: 35px;
+}
+.social li a{
+    color: black;
+}
+
+/* Navrbar */
+.accueil {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+ li a{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* titre bonjour! */
+.bon{
+    
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding-left:20%;
+    margin: 5%;
+}
+
+/* carré double colour blanc*/
+.light-shape{
+ width: 90px;
+ height: 90px;
+ border: 4px solid #ffffff;
+ position: absolute;
+ top: 24px;
+}
+
+/* carré double colour noir */
+.dark-shape{
+ width: 90px;
+ height: 90px;
+ border: 4px solid black;
+ position: absolute;
+ top: 7px;
+ left: 18px;
+}
+.floating-shape-group{
+    position: absolute;
+    right: 20%;
+}
+
+
+
+/* premier border */
+.première-border{
+    width: 98%;
+    margin: 15px ;
+    background-image: linear-gradient(90deg, #06c5f9 10%, #ffffff 100%);
+    border: 1px solid #06c4f96e;
+}
+
+/* le border dernier profil photo */
+.profil-border{
+    width: 240px;
+    height: 300px;
+}
+
+/* le profil photo */
+.profil-photo img{
+    width: 240px;
+    height: 300px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: #122430;
+}
+.profil-photo {
+    position: relative;
+    z-index: 1;
+}
+
+.profil-photo:after {
+    content: "";
+    width: 240px;
+    height: 300px;
+    position: absolute;
+    border: 4px solid #009efd;
+    z-index: -1;
+    top: -20px;
+    left: 20px;
+}
+
+/* le button téléchargement */
+.button{
+    height: 45px;
+    padding: 0;
+    background:#009efd  ;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+}
+.button:hover{
+    background: #2af59a ;
+}
+.button:active{
+    background: #009efd;
+}
+.button-text,
+.button-icon{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+}
+.button-icon{
+    font-size: 1em;
+    background: rgb(0, 0, 0, 0.08);
+}
+
+
+/* 1er paragraphe a propos de moi */
+.titre-propos h2{
+    font-size: 40px;
+    color: black ;
+    text-transform: uppercase;
+    text-align: center;
+}
+.titre-propos p{
+    font-size: 26px;
+    color: black;
+    padding-left: 120px;
+}
+
+/* Read form age,adresse... */
+.read-form{
+    font-size: 20px;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 90px;
+}
+.question li{
+    list-style: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.answer li{
+    list-style: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+/* deuxieme-border */
+
+.deuxieme-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #0b212e;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* le titre formation */
+.titre-formation h3{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* le titre la manu à gauche*/
+.titre-manu{
+    color: #26a0da;
+    margin-top: 320px;
+    font-size: 25px ;
+    text-align: center;
+}
+/* la date de la manu */
+.la-manu p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* le cricle after */
+#row-un{
+    padding-bottom: 100px;
+}
+
+/* le 1er cricle de formation avec icon*/
+.cricle1{
+    position: relative;
+}
+.cricle1::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    right: -40px;
+    border-radius: 50%;
+    border: 3px solid #26a0da;
+    background-image: url(./image/casquette-diplome.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* le line de formation */
+.cricle1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    height: calc(100% - 80px);
+    top: 80px;
+    right: 0px;
+    background-color: #26a0da;
+}
+
+
+/* le phrase de la manu à droit */
+.manu{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 250px;
+}
+
+/* deuxieme circle de fromation */
+.cricle2{
+    position: relative;
+}
+.cricle2::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -32px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+
+/* le phrase de grandchamp à gauche */
+.grand-champ{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    padding-bottom: 10px;
+}
+
+/* troisieme cricle de formation en blanc */
+/* 3e cricle de formation */
+
+.cricle3{
+    position: relative;
+}
+.cricle3::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 630px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+
+/* 4e cricle de formation */
+.cricle4{
+    position: relative;
+}
+.cricle4::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    right: -31px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #26a0da;
+}
+
+
+/* le titre bac pro commerce à droit*/
+.ufa{
+    color: #26a0da;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 130px;
+}
+.titre-grandchamp p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+
+/* troisieme-border */
+.troisieme-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #12243094;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* le titre Exéprience */
+.titre-experience{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+}
+
+/* le 1er cricle de Experience avec icon */
+.line2 {
+    padding-bottom: 100px;
+}
+.cricle-1::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    right: -40px;
+    border-radius: 50%;
+    border: 3px solid #26a0da;
+    background-image: url(./image/poste-de-travail.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* le line de experience */
+.cricle-1{
+    position: relative;
+}
+.cricle-1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    height: calc(100% - 80px);
+    top: 80px;
+    right: 0px;
+    background-color: #26a0da;
+}
+
+/* le titre de la manu en experience */
+.titre-front-end{
+    color: #26a0da;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+/* le pharse en bas de la manu */
+.front-end p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 15px;
+}
+
+/* le 2e cricle de experience */
+.cricle-2{
+    position: relative;
+}
+.cricle-2::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -46px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+/* le pharse de manu en droit  */
+.front-end-p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 15px;
+    margin-top: 200px;
+}
+
+/* le titre de carrefour city */
+.carrefour-city{
+    color: #26a0da;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+/* le 3e cricle de experience */
+.cricle-3{
+    position: relative;
+}
+.cricle-3::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -33px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+
+/* le pharse en bas de titre */
+.carrefour-p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 170px;
+}
+/* le list de pharse en gauche de crrfour */
+.carrefour-p ul{
+    list-style: none;
+}
+/* le pharse de carrefour */
+.carrefour p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* le titre de go sport */
+.go{
+    color: #26a0da;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 160px;
+}
+/* le pharse en bas de titre */
+.go-sport p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+/* le pharse de go sport */
+.go-sport-p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 470px;
+}
+
+/* le 4e cricle de experience */
+.cricle-4{
+    position: relative;
+}
+.cricle-4::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -33px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+
+/* le titre de bonobo jeans */
+.bonobo-jeans{
+    color: #26a0da;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 135px;
+}
+
+/* le 5e cricle de experience */
+.cricle-5{
+    position: relative;
+}
+.cricle-5::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: -33px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #0b212e;
+    box-shadow: 0px 0px 0 4px #26a0da;
+}
+
+.bonobo p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+/* le pharse de bonobo jeans  */
+.bonobo-p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 140px;
+}
+.bonobo-p ul{
+    list-style: none;
+}
+
+/* 6e derniere cricle de experience */
+.cricle-6{
+    position: relative;
+}
+.cricle-6::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -52px;
+    right: -31px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid #26a0da;
+}
+
+/* quatrième-border */
+.quatrième-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #0b212e;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* le titre de langue de programation */
+.langue-progra{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 170px;
+}
+
+/* le logo de langue programation */
+.program ul {
+    list-style: none;
+    margin-left: 385px;
+}
+.program img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+.program li{
+    display: inline-block;
+}
+
+/* le logo de logiciel */
+.titre-logiciel{
+    font-size: 40px;
+    color: #ffffff ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 78px;
+}
+.logiciel ul {
+    list-style: none;
+    margin-left: 385px;
+}
+.logiciel img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+.logiciel li{
+    display: inline-block;
+}
+
+/* le titre de langue */
+.langue{
+    font-size: 40px;
+    color: #ffffff ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 78px;
+}
+
+/* le box de langue */
+.accordion{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+/* le titre des langues */
+.accordion-button{
+    text-align: center;
+    font-size: 30px;
+    background-color: #4683acd0;
+}
+/* le background color de box intérieur */
+.accordion-body{
+    background-color: #0b212e;
+    color: #ffffff ;
+}
+
+/* cinquième-border */
+
+.cinquième-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #12243094;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* titre-mon-project" */
+.titre-mon-project h3{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 170px;
+}
+
+/* 1er card */
+.card{
+   width: 425px;
+   text-align: center;
+   background-color: #a7cedd;
+}
+.card-img-top{
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+}
+.permiere-title{
+    color: #26a0da;
+}
+.card-body a{
+    color: rgb(0, 119, 255);
+    font-size: 20px;
+}
+
+/* 2er card */
+.card-deux{
+    width: 425px;
+    text-align: center;
+    background-color: #a7cedd;
+ }
+ .card-img-seconde{
+     width: 400px;
+     margin: 10px;
+     padding: 5px;
+ }
+ .deuxieme-title{
+     color: #26a0da;
+ }
+
+ /* 3e card */
+.card-trois{
+    width: 425px;
+    text-align: center;
+    background-color: #a7cedd;
+ }
+ .card-img-troisieme{
+     width: 400px;
+     margin: 10px;
+     padding: 5px;
+ }
+ .troisieme-title{
+     color: #26a0da;
+ }
+
+  /* 4e card */
+.card-quatre{
+    width: 425px;
+    text-align: center;
+    background-color: #a7cedd;
+ }
+ .card-img-quatrième{
+     width: 400px;
+     margin: 10px;
+     padding: 5px;
+ }
+ .quatrième-title{
+     color: #26a0da;
+ }
+
+   /* 5e card */
+.card-cinq{
+    width: 425px;
+    text-align: center;
+    background-color: #a7cedd;
+ }
+ .card-img-cinquième{
+     width: 400px;
+     margin: 10px;
+     padding: 5px;
+ }
+ .cinquième-title{
+     color: #26a0da;
+ }
+
+   /* 6e card */
+.card-six{
+    width: 425px;
+    text-align: center;
+    background-color: #a7cedd;
+ }
+ .card-img-sixième{
+     width: 400px;
+     margin: 10px;
+     padding: 5px;
+ }
+ .sixième-title{
+     color: #26a0da;
+ }
+
+
+
+ /* sixième-border */
+
+ .sixième-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #0b212e;
+    border: 1px solid rgba(255, 255, 255, 0);
+ }
+ 
+ /*  */
+ .titre-mapassion h6{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 170px;
+ }
+ .insta a{
+    font-size: 50px;
+    color: #17bbeca8 ;
+ }
+ .insta {
+    margin-left: 970px;
+    margin-top: -106px;
+ }
+
+ /*  */
+ .parag p{
+     color: white;
+     font-size: 25px;
+     text-align: center;
+     margin: 20px;
+ }
+
+ /* slider */
+
+.carousel-inner{
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+.carousel-indicators{
+    margin-bottom: 200px;
+}
+.carousel-control-prev{
+    left: 275px;
+    bottom: 50px;
+}
+.carousel-control-next {
+    right: 235px;
+    bottom: 50px;
+} 
+
+/* Mes centres d'intérêt */
+.maautre{
+    font-size: 35px;
+    color: #ffffff ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 100px;
+}
+.deuxieme-conta ul{
+    list-style: none;
+    margin-left: 510px;
+    padding-top: 41px;
+}
+.deuxieme-conta li{
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+}
+.deuxieme-conta img{
+    width: 70px;
+}
+
+
+/* septième-border */
+.septième-border{
+    width: 98%;
+    margin: 15px ;
+    background-color: #12243094;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* titre le contact - moi */
+/* le titre contact */
+.contact h2{
+    font-size: 40px;
+    color: #17bbeca8 ;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+    margin-left: 170px;
+}
+/* le pharse en bas de titre */
+.contact h3{
+    font-size: 30px;
+    color: #ffffff ;
+    text-align: center;
+    margin: 45px;
+    margin-left: 170px;
+}
+/* le from */
+section#contact .container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+/* les nom et email */
+section#contact .container input{
+   width: 47%;
+   color: white;
+}
+section#contact .container input,
+section#contact .container textarea{
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid #26a0da;
+    background-color: #009cff1a;
+    transition: 0.2s;
+}
+/* le message */
+section#contact .container textarea{
+   width: 100%;
+   resize: none;
+   height: 200px;
+}
+/* le button */
+section#contact .container form button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #26a0da;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    outline: none;
+    margin-left: 480px;
+    margin-bottom: 40px;
+}
+section#contact .container form button i{
+   margin: 10px;
+}
+/* huitième-border */
+/* .huitième-border{
+    width: 50%;
+    margin: 30px ;
+    background-color: #0b212e;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-left: 360px;
+    border-radius: 25px;
+} */
+/* logo de site */
+/* .logo-2 img{
+    width:60px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 200px;
+} */
+
+/* social header*/
+/* .social-2{
+    list-style: none;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    margin-left: 260px;
+}
+.social-2 li a{
+    color: #26a0da;
+} */
+
+
+/* copyright */
+.copy{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-top: 2px solid #26a0da;
+    background-color: #ffffff00;
+    transition: 0.2s;
+}
+
+/* arrow top  */
+.arrow-topbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color:#26a0da;
+    font-size: 30px;
+}
+
